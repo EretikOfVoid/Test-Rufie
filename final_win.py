@@ -14,7 +14,7 @@ class FinalWin(QWidget):
         if self.exp.age <7:
             self.index = 0
             return 'нет данных для такого возраста'
-        self.index = (4*(int(self.exp.test1)+int(self.exp.test2)+int(self.exp.test3))-200) /10
+        self.index = (4*(int(self.exp.test1)+int(self.exp.test2)+int(self.exp.test3))-200) /100
         if self.exp.age == 7 or self.exp.age == 8:
             if self.index >=21:
                 return txt_res1
